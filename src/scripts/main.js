@@ -8,6 +8,7 @@ import { createWheat } from "./seeds/Wheat.js";
 import { createSunflower } from "./seeds/Sunflower.js";
 import {addPlant, usePlants} from "./field.js";
 import { plantSeeds } from "./tractor.js";
+import { harvestPlants } from "./harvester";
 
 // const asparagusSeed = createAsparagus();
 
@@ -29,7 +30,9 @@ import { plantSeeds } from "./tractor.js";
 const yearlyPlan  = createPlan();
 console.log(yearlyPlan);
 plantSeeds(yearlyPlan);
-const plantsUsed = usePlants();
-console.log(plantsUsed);
+const fieldOfPlants = usePlants();
+console.log(fieldOfPlants);
+const harvest = harvestPlants(fieldOfPlants);
+cinsole.log(harvest);
 
 
