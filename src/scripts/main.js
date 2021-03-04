@@ -35,5 +35,8 @@ const fieldOfPlants = usePlants();
 console.log(fieldOfPlants);
 const harvest = harvestPlants(fieldOfPlants);
 console.log(harvest);
+// const sortedHarvest = harvest.sort((a,b)=> (a.type > b.type)? 1:-1);
+console.log(harvest);
+// Catalog(sortedHarvest);
 Catalog(harvest);
 
